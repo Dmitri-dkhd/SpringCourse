@@ -13,9 +13,10 @@
           class="ru.alishev.springcourse.ClassicalMusic">
     </bean>
 
+
     <bean id="musicPlayer"
           class="ru.alishev.springcourse.MusicPlayer">
-        <property name="music" ref="musicBean"/>
+        <property name="musicList" ref="musicBean"/>
 
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
